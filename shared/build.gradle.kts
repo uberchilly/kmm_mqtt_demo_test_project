@@ -4,7 +4,7 @@ plugins {
     kotlin("multiplatform")
     id("com.android.library")
     id("kotlin-android-extensions")
-    kotlin("native.cocoapods") //todo: test
+    kotlin("native.cocoapods")
 }
 group = "com.nexoslav.testkmmapp"
 version = "1.0-SNAPSHOT"
@@ -34,7 +34,7 @@ kotlin {
 //        // You can change the name of the produced framework.
 //        // By default, it is the name of the Gradle project.
 //        frameworkName = "my_framework"
-//        pod("SDWebImage/MapKit") //todo: add dependency to MQTT lib used of IOS
+        pod("SwiftMQTT")
     }
     sourceSets {
         val commonMain by getting

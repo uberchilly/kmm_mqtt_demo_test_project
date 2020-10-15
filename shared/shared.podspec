@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
 
                 
 
-                
+    spec.dependency 'SwiftMQTT'
 
     spec.pod_target_xcconfig = {
         'KOTLIN_TARGET[sdk=iphonesimulator*]' => 'ios_x64',
