@@ -1,24 +1,51 @@
 package com.nexoslav.testkmmapp.shared
 
+//import SwiftMQTT
+
 actual abstract class AbstractMQTTManager {
+//    var mqttSession: MQTTSession?
+
     actual fun createMQTT(broker: String, clientId: String) {
-        //todo:
+//        mqttSession = MQTTSession(
+//            host = broker,
+//            port = port,
+//            clientID = clientId,
+//            cleanSession = true,
+//            keepAlive = 15,
+//            useSSL = true
+//        )
+//        mqttSession.delegate = this
     }
 
     actual fun connect(username: String, password: String) {
         //todo:
+//        if (username.isNotEmpty() && password.isNotEmpty()) {
+//            mqttSession?.username = username
+//            mqttSession?.password = password
+//        }
+//        mqttSession?.connect { error ->
+//            if (error == .none) {
+//                onConnected()
+//                subscribeToEverything()
+//            } else {
+//                onConnectionFailed(error)
+//            }
+//        }
     }
 
     actual fun disconnect() {
-        //todo:
+//        mqttSession?.disconnect()
     }
 
     protected actual fun subscribe(topic: String, qos: Int) {
         //todo:
+//        mqttSession?.subscribe(to = topic, delivering = .atLeastOnce) { error ->
+//        }
     }
 
     protected actual fun unsubscribe(topic: String) {
-        //todo:
+//        mqttSession?.unSubscribe(from = topic, { error ->
+//        })
     }
 
     actual fun destroyMQTT() {
